@@ -1,7 +1,7 @@
 # Jiawei.github.io
 
 ### Education
-**B.S. in Data Science @ Capital University of Economics and Business (*20XX – 20XX*)**
+**B.S. in Data Science @ Capital University of Economics and Business (*2023 – 2027*)**
 – Core coursework: Statistics, Linear Models, Data Science, Global Health Analytics  
 – Research interests: Causal inference, linear modeling, health data analysis
 
