@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jiawei Guo | Data Science Portfolio</title>
+    <meta
+      name="description"
+      content="Jiawei Guo's data science portfolio: quantitative finance, statistical modeling, reproducible analytics, and DATA 498D capstone work."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Portfolio navigation">
+      <a class="brand" href="#top" aria-label="Jiawei Guo portfolio home">Jiawei Guo</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Science · Quantitative Finance · Reproducible Analytics</p>
+          <h1>Building statistical and machine learning workflows that turn messy data into defensible decisions.</h1>
+          <p class="lead">
+            I am a data science undergraduate focused on statistical modeling, financial market data, and reproducible
+            research. My work combines Python, R, machine learning, data cleaning, and clear communication.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="https://github.com/Guojiawei-01" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/jiawei-guo-ds" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/Guojiawei-01/sp500" target="_blank" rel="noreferrer">S&amp;P 500 Project</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Portfolio highlights">
+          <div>
+            <span class="stat">19,127</span>
+            <span class="label">raw financial news rows validated</span>
+          </div>
+          <div>
+            <span class="stat">974</span>
+            <span class="label">duplicate rows removed in capstone data prep</span>
+          </div>
+          <div>
+            <span class="stat">3,506</span>
+            <span class="label">trading days prepared with next-day targets</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro">
+        <div class="section-kicker">Profile</div>
+        <div class="intro-grid">
+          <p>
+            I work best at the point where data quality, modeling assumptions, and interpretation meet. I am especially
+            interested in quantitative finance, causal and statistical modeling, and analytics projects where the final
+            answer must be reproducible and explainable.
+          </p>
+          <p>
+            My portfolio includes a DATA 498D capstone on financial news sentiment and S&amp;P 500 movement, linear
+            modeling work in global health, Quarto-based reporting, Linux and HPC coursework, and professional
+            development materials for research communication.
+          </p>
+        </div>
+      </section>
+
+      <section class="section featured" id="work">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Featured Project</div>
+            <h2>Does Financial News Sentiment Move the S&amp;P 500?</h2>
+          </div>
+          <div class="section-links">
+            <a href="https://github.com/Guojiawei-01/sp500" target="_blank" rel="noreferrer">Repository</a>
+            <a href="https://github.com/Guojiawei-01/sp500/blob/main/report/final_report.pdf" target="_blank" rel="noreferrer">Final report</a>
+          </div>
+        </div>
+
+        <div class="project-layout">
+          <div class="project-copy">
+            <p>
+              This DATA 498D group capstone tested whether daily financial news headline sentiment contains useful
+              information about next-day S&amp;P 500 movement. The project compared dictionary sentiment, VADER,
+              FinBERT, topic features, Logistic Regression, XGBoost, and long/flat backtests.
+            </p>
+            <p>
+              The final finding was deliberately cautious: daily headline sentiment showed weak predictive power, and
+              backtest performance depended heavily on regime, threshold choice, and trading assumptions. That result
+              made the project stronger because it separated a clean workflow from an overstated trading claim.
+            </p>
+            <div class="role-block">
+              <h3>My role: data preparation lead</h3>
+              <ul>
+                <li>Validated the raw Kaggle headline file and documented data limitations.</li>
+                <li>Removed exact duplicates and built the daily aggregation pipeline.</li>
+                <li>Constructed next-day return and direction targets for modeling.</li>
+                <li>Integrated FRED macro context including VIX, Treasury rates, CPI, unemployment, and recession indicators.</li>
+                <li>Maintained the data dictionary and EDA summaries used by the team.</li>
+              </ul>
+            </div>
+          </div>
+
+          <figure class="project-figure">
+            <img
+              src="https://raw.githubusercontent.com/Guojiawei-01/sp500/main/figures/fig6_backtest_equity_curves.png"
+              alt="Backtest equity curves comparing S&P 500 buy and hold with model-based strategies"
+            >
+            <figcaption>Backtest results were treated as evidence to stress-test, not as proof of a reliable trading edge.</figcaption>
+          </figure>
+        </div>
+
+        <div class="evidence-grid" aria-label="S&P 500 project evidence">
+          <article>
+            <img
+              src="https://raw.githubusercontent.com/Guojiawei-01/sp500/main/figures/fig1_split_timeline.png"
+              alt="Timeline showing train, validation, and test split periods"
+            >
+            <h3>Time-aware validation</h3>
+            <p>Train, validation, test, and expanding-window splits were designed to reduce leakage in market prediction.</p>
+          </article>
+          <article>
+            <img
+              src="https://raw.githubusercontent.com/Guojiawei-01/sp500/main/figures/fig2_sentiment_method_comparison.png"
+              alt="Sentiment method comparison chart"
+            >
+            <h3>Method comparison</h3>
+            <p>Dictionary, VADER, FinBERT, and combined feature sets were compared instead of relying on one sentiment score.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">Selected Work</div>
+            <h2>Projects and coursework</h2>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <span class="tag">Statistical Modeling</span>
+            <h3>Global Health Linear Models</h3>
+            <p>
+              Applied linear regression and generalized linear models to global health indicators, with attention to
+              diagnostics, multicollinearity, heteroscedasticity, and interpretable public-health conclusions.
+            </p>
+            <p class="tools">R · Python · GLM · Diagnostics · Visualization</p>
+          </article>
+
+          <article class="work-card">
+            <span class="tag">Reproducible Reporting</span>
+            <h3>Quarto Olympics Analysis</h3>
+            <p>
+              Built a Quarto analysis using tidyverse workflows to clean Olympics data, visualize medal distributions,
+              and render tables and plots in a reproducible HTML report.
+            </p>
+            <p class="tools">Quarto · R · tidyverse · ggplot2 · gt</p>
+          </article>
+
+          <article class="work-card">
+            <span class="tag">Research Communication</span>
+            <h3>Financial Portfolio Optimization Review</h3>
+            <p>
+              Wrote a structured reflection on a KSE-30 portfolio optimization paper, evaluating statistical elements,
+              model assumptions, robustness, graphical communication, and practical limitations.
+            </p>
+            <p class="tools">Quant finance · Literature review · Model critique</p>
+          </article>
+
+          <article class="work-card">
+            <span class="tag">Computing Systems</span>
+            <h3>Linux and HPC for Data Science</h3>
+            <p>
+              Connected Linux, containers, workflow automation, and HPC cluster concepts to large-scale machine learning
+              and quantitative finance workloads such as factor backtesting and portfolio optimization.
+            </p>
+            <p class="tools">Linux · HPC · Containers · Workflow automation</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="experience">
+        <div>
+          <div class="section-kicker">Experience</div>
+          <h2>Applied data work</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="time">Jul 2025 - Sep 2025</div>
+            <h3>Quantitative Research Intern · Causis Investment Management (Wuhan) Co., Ltd.</h3>
+            <p>
+              Researched intraday high-frequency stock strategies and factor development. Worked with financial
+              time-series data, Python analysis workflows, and statistical models for signal validation.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div class="time">Expected May 2027</div>
+            <h3>B.S. Data Science · University of Arizona</h3>
+            <p>
+              Coursework and projects emphasize statistics, regression modeling, machine learning, reproducible
+              analytics, research communication, and professional portfolio development.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <div class="time">Expected May 2027</div>
+            <h3>Statistics · Capital University of Economics and Business</h3>
+            <p>
+              Training in statistical reasoning, data analysis, and quantitative methods that support the finance and
+              public-health projects in this portfolio.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">Skills</div>
+            <h2>Technical toolkit</h2>
+          </div>
+        </div>
+        <div class="skill-grid">
+          <div>
+            <h3>Programming</h3>
+            <p>Python, R, SQL, Git, command line workflows</p>
+          </div>
+          <div>
+            <h3>Data Science</h3>
+            <p>Data cleaning, EDA, regression, GLM, classification, model diagnostics, backtesting</p>
+          </div>
+          <div>
+            <h3>Libraries</h3>
+            <p>pandas, NumPy, scikit-learn, XGBoost, Matplotlib, Seaborn, tidyverse, ggplot2</p>
+          </div>
+          <div>
+            <h3>Communication</h3>
+            <p>Quarto reports, technical writing, presentation design, reproducible project documentation</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2>Open to data science internships, quantitative research projects, and applied analytics work.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Guojiawei-01" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/jiawei-guo-ds" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Guojiawei-01/sp500" target="_blank" rel="noreferrer">Capstone repository</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
